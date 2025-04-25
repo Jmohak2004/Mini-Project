@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+</html>
+<head>
+
+<title>Buggati</title>
+
+<link rel="stylesheet" href="style1.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
+<style>
+
+  video {width:710px; height:340px;}
+
+</style>
+</style>
+</head>
+<body BGCOLOR=BUTTERCREAM >
+
+<header>
+	 <a href="form1/login.html" > Login </a>    
+	 <a href="form2/signup.html" > Signup  </a>   
+	 <a href="form3/registration.html"> Registration  </a>   
+	 <a href=/ > Pricing  </a>   
+	
+</header>
+
+<main>
+	<center> <h2 class='main-text'style="font-size: 55px;">   Buggati Tourbilllion  </FONT>  </h2> </center>
+	<center> <p class='main-text' style="font-size: 35px;">  Enter the <bold> Fastest </bold> Page on the Internet</FONT> </p> </center>
+	
+	<br/>
+	<br/>
+	<center> <a href='https://tourbillon.bugatti.com/en' target='_blank'>Enter this link to Enter official buggati website</a> </center>
+	<br/>
+	<br/>
+	<center> <img class = "main_image"src="https://newsroom.cdn.bugatti-media.com/667499268f9399fbd36b30c1/sm" ></img></center>
+	<p> <b> Bugatti is a French luxury car manufacturer that produces high-performance hyper sports cars. The company was founded in 1909 by Ettore Bugatti, an Italian-born industrial designer. Bugatti cars are known for their beauty and racing success </b> </p>
+	<center> <input placeholder=' Rate the car ' type='number'> </center>
+	<center> <h2 style="font-size: 35px;"> Hear the exhaust yourself  </FONT>  </h2> </center>
+	<center><audio src='.\passing-car-wet-road-6940.mp3' controls=“controls”></audio></center>
+	<hr/>
+	<center> <h2 style="font-size: 35px;"> The exterior </FONT> </h2> </center>
+	<p> <b> The Bugatti Tourbillon is a hypercar with a streamlined profile, a low roof, and a forward-raked stance. The car's exterior design is inspired by the Type 57 SC Atlantic and features a magnesium alloy body.</b> </p> 
+	<center> <video class='bugattiVideo' src=".\BUGATTI-World-Premiere-Presskit-Videos-59-CGI.mp4" type='mp4' controls='controls'></ video></center>
+	<hr/>
+	<center><h2 style="font-size: 35px;"> The doors and Interirors</FONT> </h2> </center>
+		<p> <b> The new Bugatti Tourbillon is fitted with extravagant dihedral doors. You'd be tempted to think they were designed just for extra style points, and you'd be to correct. But, according to Bugatti's design boss, there's also another much more important and functional reason..</b> </p> 
+
+	<center> <video class='bugattiVideo' src=".\BUGATTI-World-Premiere-Presskit-Videos-60-CGI.mp4" type='mp4' controls='controls'></ video></center>
+	<hr/>
+	<center> <h2 style="font-size: 35px;"> The stearing and Driviers view  </FONT> </h2> </center>
+		<p> <b> The Bugatti Tourbillon is a hypercar with a streamlined profile, a low roof, and a forward-raked stance. The car's exterior design is inspired by the Type 57 SC Atlantic and features a magnesium alloy body.</b> </p> 
+
+	<center> <video class='bugattiVideo' src=".\BUGATTI-World-Premiere-Presskit-Videos-61-CGI.mp4" type='mp4' controls='controls'></ video></center>
+	<hr/>
+	<center> <h2 style="font-size: 35px;"> Speedometer MAX-SPEED 550 </FONT> </h2> </center>
+	<center> <video class='bugattiVideo' src=".\BUGATTI-World-Premiere-Presskit-Videos-62-CGI.mp4" type='mp4' controls='controls'></ video></center>
+	<hr/>
+	<center> <h2 style="font-size: 35px;"> Fatest V16 engine </FONT> </h2> </center>
+	<p><b> Introducing: The Jacob & Co. X Bugatti Chiron Tourbillon ...The Bugatti Tourbillon has an 8.3-liter V16 engine that's naturally aspirated. It's paired with three electric motors, making the Tourbillon a hybrid hyper sports car.  </b></p>
+	<center> <video class='bugattiVideo' src=".\BUGATTI-World-Premiere-Presskit-Videos-63-CGI.mp4" type='mp4' controls='controls'></ video></center>
+	
+</main>
+<footer style="text-align: center; font-weight: 100; font-size: 30px;">
+	Made with ❤️ By Mohak jaiswal
+</footer>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+    const videos = document.querySelectorAll(".bugattiVideo");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const video = entry.target;
+
+            if (entry.intersectionRatio > 0) {
+                video.play().catch(() => {}); // Catch error if autoplay fails
+            } else {
+                video.pause();
+            }
+        });
+    }, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.01 // Triggers as soon as even 1% is visible
+    });
+
+    videos.forEach(video => {
+        video.muted = true; // Autoplay requires muted for many browsers
+        observer.observe(video);
+    });
+});
+</script>
+</body>
+<html>
